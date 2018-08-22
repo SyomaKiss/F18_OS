@@ -1,0 +1,103 @@
+    1  ls
+    2  whoami
+    3  cd ..
+    4  ls
+    5  cd home
+    6  mkdir week1
+    7  ls
+    8  cd week1
+    9  ls ..
+   10  ls ~
+   11  ls usr/bin
+   12  cd ~
+   13  cd ..
+   14  ls
+   15  ls usr/bin
+   16  grep
+   17  grep --help
+   18  ls
+   19  cd usr/bin
+   20  ls
+   21  grep *gcc*
+   22  egrep
+   23  egrep *gcc*
+   24  grep disco
+   25  grep disco *gcc*
+   26  grep usr/bin *gcc*
+   27  find . -maxdepth 1 -name "*gcc*" -print
+   28  find . -maxdepth 1 -name "*md5*" -print
+   29  cd ..
+   30  docker
+   31  sudo apt install docker.io
+   32  cd ~
+   33  apt install docker.io
+   34  apt-get install docker
+   35  SS
+   36  quit
+   37  /quit
+   38  docker
+   39  $docker
+   40  gcc
+   41  apt install gcc
+   42  gcc
+   43  apt-get update
+   44  apt install gcc
+   45  gcc
+   46  gcc --help
+   47  cd ~
+   48  ls
+   49  cd ~
+   50  ls
+   51  cd ..
+   52  ls
+   53  ls usr/bin
+   54  ls grep sort -r
+   55  ls
+   56  cd usr/bin
+   57  find . -maxdepth 1 -name "*yse*" ! -name "*:*" -print
+   58  find . -maxdepth 1 -name "*yes*" ! -name "*:*" -print
+   59  find . -maxdepth 1 -name "*gcc*" ! -name "*:*" -print
+   60  find . -maxdepth 1 -name "*gcc*" ! -name "*:*" -print -sort -r
+   61  find . -maxdepth 1 -name "*gcc*" ! -name "*:*" -print -sort -r 
+   62  ды
+   63  ls
+   64  ls | grep *gcc*
+   65  ls | grep "*gcc*"
+   66  ls | grep "*gcc*" | sort -r
+   67  ls | grep "*gcc*" stdin | sort -r
+   68  ls
+   69  ls | grep "gcc"
+   70  ls | grep "gcc" | sort -r
+   71  ls | grep "gcc" | sort -r | > ~/week1/ex1.txt
+   72  cd ~
+   73  ls
+   74  cd ..
+   75  ls
+   76  cd home
+   77  ls
+   78  cd week1
+   79  ls
+   80  touch ex1.txt
+   81  ls
+   82  gedit ex1.txt
+   83  apt install gedit
+   84  gedit
+   85  gedit ex1.txt
+   86  nano ex1.txt
+   87  ls usr/bin | grep "gcc" | sort -r | > ~/week1/ex1.txt
+   88  ls /usr/bin | grep "gcc" | sort -r | > ~/week1/ex1.txt
+   89  ls /usr/bin | grep "gcc" | sort -r | > /home/week1/ex1.txt
+   90  ls
+   91  cat ex1.txt
+   92  ls /usr/bin | grep "gcc" | sort -r > /home/week1/ex1.txt
+   93  cat ex1.txt 
+   94  ls
+   95  touch ex2.txt
+   96  ls
+   97  cat ex1.txt 
+   98  cat ex2.txt
+   99  history
+  100  history head 3
+  101  history head -n 3
+  102  history | head -n 3
+  103  history | cat > /home/week1/ex2.txt
