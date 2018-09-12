@@ -4,10 +4,11 @@
 #include <stdlib.h>
 
 int main(){
-	char command[30];
+	char command[100];
 	while (1){
 		printf("> ");
-		scanf("%s", command);
+		fgets(command, 100, stdin);
+		printf("< ");
 		system(command);
 	}
 	return 1;
