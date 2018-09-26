@@ -28,10 +28,9 @@ int main()
 			write(fd[1], &child_2, sizeof(child_2));
 			waitpid(child_2, &status, 0);
 			if (WIFEXITED(status)){
-				printf("Norm %d\n", WEXITSTATUS(status));
+				printf("Exit status from child 2 received: %d\n", WEXITSTATUS(status));
 			}
 			printf("Status of child 2 received\n");
-			exit(0);
 		} else { //child 2
 			exit(222);
 		}
