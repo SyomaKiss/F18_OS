@@ -1,0 +1,3 @@
+Physical address is a real address om memory chunk in main memory. 
+Virtual address can point to chunks of memory not presented
+ in main memory(swapped out to the disk).

@@ -4,7 +4,7 @@
 int main() {
 	char **s;
 	char foo[] = "Hello World";
-	s = malloc(sizeof(30));
+	s = malloc(0);
 	*s = foo;
 	printf("s is %s\n",*s);
 	s[0] = foo;

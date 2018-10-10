@@ -1,13 +1,24 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+
 
 #define N 10
-#define is_parallel 1
+#define is_parallel 0
 
 void *start_routine(void *tid){
 	printf("Hello from thread %p\n", tid);
 	pthread_exit(NULL);
+}
+
+void *producer_routine(void *tid){
+	
+}
+
+void myprint(cha	r *s, time_t *t){
+	printf("%ln time received", t);
+	printf("%ld instant time", time(NULL));
 }
 
 int main(){
@@ -21,6 +32,7 @@ int main(){
 			pthread_join(threads[i], NULL);
 		}
 		
+		myprint(
 		
 		if (status != 0){
 			printf("Error code from pthread_create %d\n", status);

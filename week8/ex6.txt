@@ -1,0 +1,2 @@
+2^16 / 2^13 = 8 entries
+Because 8KB = 2^13 bytes.
