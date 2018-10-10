@@ -1,2 +1,3 @@
+# of addresses which can be mapped with 16 bit number is 2^16
+Offset for 8K page is 2^13 
 2^16 / 2^13 = 8 entries
-Because 8KB = 2^13 bytes.
