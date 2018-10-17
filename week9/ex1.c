@@ -73,7 +73,7 @@ int main(){
 			table[first_available].referenced = 1;
 			table[first_available].number = page_number;
 			miss++;
-			if (first_available < MAX-2) first_available++;
+			first_available++;
 //			printf("miss");
 			} else {
 				m = least_one(table);

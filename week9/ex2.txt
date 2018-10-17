@@ -1,2 +1,2 @@
 If sequence will contain long repeated subseqences on the same integers, it will result in greater hit rate.
-If pages are not repeated as much as possible it will result in less hit rate.
+If pages are not repeated as much as possible, it will result in less hit rate.
