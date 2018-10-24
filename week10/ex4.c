@@ -11,28 +11,24 @@ int main(){
 	DIR *dirp = opendir("./tmp");
 	struct dirent* dp;
 	struct stat *buf = malloc(sizeof(struct stat));
-	unsigned long long a[100], b[100];
-	int i = 0, j = 0, jj = 0;
-	char *s[100];
-	int mask[100];
+	unsigned long long a[100]; //i-node for each file in dir
+	int j = 0;
+	char *s[100];  //names of files
+	int mask[100]; // which file appears more then twice
 	while ((dp = readdir(dirp)) != NULL) {
-//		printf("%s his inum: ", dp->d_name);
 		s[j] = dp->d_name;
 		char *p = malloc(100);
 		strcat(p, "./tmp/");
 		strcat(p, dp->d_name);
 		stat(p, buf);
-		//printf("%ld\n", buf->st_ino);
 		a[j] = buf->st_ino;
 		if (buf->st_nlink > 1) {
-			mask[jj] = 1;
-		} else mask[jj] = 0;
-		jj++;
+			mask[j] = 1;
+		} else mask[j] = 0;
 		j++;
 	}
-//	printf("%d\n", j);
 	unsigned long long inum ;
-	for(i = 0; i < j; i++){
+	for(int i = 0; i < j; i++){
 	if (mask[i] > 0){
 		printf("For index-node: %lld hard-link are {", a[i]);
 		inum = a[i];
