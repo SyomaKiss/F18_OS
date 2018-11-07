@@ -1,2 +1,21 @@
-Making process sycnchronius makes the things execute faster.
+Making process sycnchronius makes the things execute faster in system mode.
 In the same time making buffer begger speed ups the process execution.
+
+SYNC 
+
+real	0m9.737s	|10 bytes buffer
+user	0m0.594s
+sys	0m9.000s
+
+real	0m0.137s	|1000 bytes buffer
+user	0m0.016s
+sys	0m0.094s
+
+ASYNC
+real	0m9.804s	|10 bytes buffer
+user	0m0.641s
+sys	0m9.063s
+
+real	0m0.125s	|1000 bytes buffer
+user	0m0.016s
+sys	0m0.078s

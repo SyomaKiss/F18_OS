@@ -1,0 +1,4 @@
+gcc copy.c -o copy -D SYNC=1 -D BUF_SIZE=10 && (time ./copy file3 file4)&>> ex3.txt
+gcc copy.c -o copy -D SYNC=1 -D BUF_SIZE=1000 && (time ./copy file3 file4)&>> ex3.txt
+gcc copy.c -o copy -D BUF_SIZE=10 && (time ./copy file3 file4)&>> ex3.txt
+gcc copy.c -o copy -D BUF_SIZE=1000 && (time ./copy file3 file4)&>> ex3.txt
