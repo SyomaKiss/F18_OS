@@ -1,0 +1,2 @@
+Making process sycnchronius makes the things execute faster.
+In the same time making buffer begger speed ups the process execution.
