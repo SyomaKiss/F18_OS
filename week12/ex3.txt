@@ -1,5 +1,6 @@
-Making process sycnchronius makes the things execute faster in system mode.
-In the same time making buffer begger speed ups the process execution.
+Making process execute Asynchroniusly makes the things execute faster
+with large enough buffer. And there is almost no improvment with small buffer.
+In the same time making buffer larger significantly speeds up the process execution.
 
 SYNC 
 
